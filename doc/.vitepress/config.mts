@@ -8,6 +8,7 @@ export default defineConfig({
     rewrites: {
         'zh/:rest*': ':rest*'
     },
+    base: "/fc-admin-doc/",
     description: "FC-Admin文档",
     head: [['link', { rel: 'icon', href: '/favicon.ico' }]],
     cleanUrls: true,
