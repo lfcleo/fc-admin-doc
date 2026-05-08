@@ -1,0 +1,21 @@
+# 联系作者
+
+看到有朋友提issuse，想让作者组建开发群进行交流，下面是作者的微信二维码，添加作者好友请备注：**FC**。
+
+<img src="/images/contact/wx_qr.jpg" width="300px" height="300px"/>
+
+## 感谢捐赠 🎁
+
+感谢小伙伴慷慨捐赠，给项目添把柴～让作者有动力继续维护开发。～～比心💗💗💗。
+
+<script setup>
+const contributor = [
+  {
+    src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAAB4CAYAAAA5ZDbSAAAAAXNSR0IArs4c6QAABKlJREFUeF7t3ElPFFEUBeBb0g3SoYksRdHoyj9hoqLuXeHPU5cOOCQm6sKNK+d52LtwA2nokW7oLvPKGCFU1ZtuETk5tXHz3uu658u9VAqbZO3GZiq8YBNICAxrmxVGYGxfAoP7EpjA6AmA18efwQQGTwC8PHYwgcETAC+PHUxg8ATAy2MHExg8AfDy2MEEBk8AvDx2MIHBEwAvjx1MYPAEwMtjBxMYPAHw8tjBBAZPALw8djCBwRMAL48dTGDwBMDLYwcTGDwB8PLYwQQGTwC8PHYwgcETAC+PHUxg8ATAy2MHE/j/SGDmTF2OnpvOvZnOi4FMuhPVG01qiTSXZyU5kuw5dzJMpfO8r/pZVR52aDq4eakh00u13CzGnYlsrHZVc5qaPyLHrs3lnrl+s636WVUeBgFsAup/GMrg41AtKwKrRel2UFkHZyekIq3VrtqoJrCbi9oqK7CIaI5qAqvRuR3kAmxOMmPajOvYi8CxCXrudwU2o3rjfjfr5piLwDHpBex1BhbJfg637sU9VRM4AClmiw+wxqgmcIxWwF5f4NhRTeAApJgt3sCRo5rAMVoBe4uA0+1Ukvre14m7jx98Gkr/vf9TNYEDkGK2FAHvrI3FINeP57/GNJ9pXmP6PlUTOEYrYG8ZcPtpXxauNyWZyj845KmawAFIMVvKgDcf92T6dF2aF2YLP2LweSj9d+6jmsAxWgF7bcDmyPmrjfJRbV6AtN1egBA4AClmiwuw+R3uwsqcmH/zrklvIq27bi9ACByjFbDXBdgcax3VX0bSf7tlvQMCWyPSXeAKnI3qKw2pL5Y8VT/oynizfFQTWNfPepoPsMaoJrCVRHeBD3A2qk/VpHmxUfxU/XUk/TfFo5rAun7W03yBnUb1w66MN/JHNYGtJLoLQoCto7qfSutOJ/dGCazrZz0tBNhlVG99G0nv9f5RTWArie6CUODQUU1gXT/raTHA5h119q666AVIzqgmsJVEd0EMcDaql2pizii6tr6PpPfq36gmsK6f9bRY4GxUX25I/UTJC5BdT9UEtpLoLtAAto7qQSqt23+eqgms62c9TQPYaVT/GEnv5RaBrSLKC7SAnUb1o57IOOWXz5QNS4/TBHYZ1e0nPQIfVuBsVJ+sSXO5+Kl69HOn8Ouq/PpoBfKaHfz39gywgfa9COybmMP6KoBto7rotgjsAOa7pApgl1Gdd58E9tVzWF8VsPlo329NENgBzHdJlcC+o5rAvnoO66sENh9vXmGaV5kuF4FdUvJcUzWwz6gmsCeey/KDAHYd1QR2EfNccxDA2aherGX/7bbsIrAnnsvygwJ2GdUEdhHzXDN3flZmztb37dr+tSPtZ7p/WjAb1SvN/O8dpyLrt/iX7jz5uLyqBA7NnzKsKgD0cwkMLkxgAoMnAF4eO5jA4AmAl8cOJjB4AuDlsYMJDJ4AeHnsYAKDJwBeHjuYwOAJgJfHDiYweALg5bGDCQyeAHh57GACgycAXh47mMDgCYCXxw4mMHgC4OWxgwkMngB4eexgAoMnAF4eO5jA4AmAl8cOJjB4AuDlsYMJDJ4AeHnsYAKDJwBeHjuYwOAJgJf3G18YssYkQA/DAAAAAElFTkSuQmCC',
+    title:'nownew',
+    link: 'https://gitee.com/nownew'
+  }
+]
+</script>
+
+<Avatar v-for="user in contributor" :src="user.src" :title="user.title" :link="user.link" />

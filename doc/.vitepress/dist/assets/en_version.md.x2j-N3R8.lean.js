@@ -1,0 +1,1 @@
+import{_ as e,c as o,o as c,a4 as d}from"./chunks/framework.DE27HZwE.js";const p=JSON.parse('{"title":"更新日志","description":"","frontmatter":{},"headers":[],"relativePath":"en/version.md","filePath":"en/version.md"}'),i={name:"en/version.md"},l=d("",3),a=[l];function t(n,r,s,_,h,m){return c(),o("div",null,a)}const u=e(i,[["render",t]]);export{p as __pageData,u as default};

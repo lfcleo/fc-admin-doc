@@ -1,0 +1,41 @@
+import{_ as s,c as a,o as n,a4 as p}from"./chunks/framework.DE27HZwE.js";const m=JSON.parse('{"title":"配置","description":"","frontmatter":{},"headers":[],"relativePath":"guide/base/configure.md","filePath":"zh/guide/base/configure.md"}'),e={name:"guide/base/configure.md"},i=p(`<h1 id="配置" tabindex="-1">配置 <a class="header-anchor" href="#配置" aria-label="Permalink to &quot;配置&quot;">​</a></h1><h2 id="logo" tabindex="-1">Logo <a class="header-anchor" href="#logo" aria-label="Permalink to &quot;Logo&quot;">​</a></h2><p>项目根目录下<code>/public/logo.png</code>,<code>/public/img/logo.png</code>文件为项目Logo，可自行替换。</p><h2 id="配置文件" tabindex="-1">配置文件 <a class="header-anchor" href="#配置文件" aria-label="Permalink to &quot;配置文件&quot;">​</a></h2><p>项目分为<code>开发环境</code>和<code>生产环境</code>，都在项目根目录</p><div class="language- vp-adaptive-theme line-numbers-mode"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code"><code><span class="line"><span>├── .env.development    # 开发环境配置文件</span></span>
+<span class="line"><span>├── .env.production     # 生产环境配置文件</span></span></code></pre><div class="line-numbers-wrapper" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h2 id="具体配置" tabindex="-1">具体配置 <a class="header-anchor" href="#具体配置" aria-label="Permalink to &quot;具体配置&quot;">​</a></h2><p><code>开发环境</code>和<code>生产环境</code>的配置文件内容基本一致，具体如下：</p><div class="language-env vp-adaptive-theme line-numbers-mode"><button title="Copy Code" class="copy"></button><span class="lang">env</span><pre class="shiki shiki-themes github-light github-dark vp-code"><code><span class="line"><span># 正式环境环境</span></span>
+<span class="line"><span>VITE_NODE_ENV = production</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span># 版本号</span></span>
+<span class="line"><span>VITE_VUE_VERSION = 1.0.0</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span># 标题</span></span>
+<span class="line"><span>VITE_VUE_TITLE = FC-Admin</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span># 接口地址</span></span>
+<span class="line"><span>VITE_VUE_API_BASEURL = /api</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span># 开发环境跨域代理，支持配置多个</span></span>
+<span class="line"><span>VITE_PROXY = [[&quot;/api&quot;,&quot;https://console-mock.apipost.cn/mock/ebfa39e6-1bfb-4a2b-aed1-01bb7b1706b7&quot;]]</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span># 本地端口</span></span>
+<span class="line"><span>VITE_VUE_PORT = 1235</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span># 首页地址</span></span>
+<span class="line"><span>VITE_DASHBOARD_URL = /dashboard</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span># 请求超时</span></span>
+<span class="line"><span>VITE_TIMEOUT = 10000</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span># Token名称</span></span>
+<span class="line"><span>VITE_TOKEN_NAME = authorization</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span># 本地存储localStorage是否加密, 为空不加密，加密方式可填写Base64/AES/DES/Rabbit/RC4，【正式环境建议加密增加安全性】</span></span>
+<span class="line"><span>VITE_LS_ENCRYPTION = RC4</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span># 本地存储localStorageAES加密秘钥，位数建议填写8的倍数</span></span>
+<span class="line"><span>VITE_LS_ENCRYPTION_KEY = 2XNN4K8LC0ELVWN4</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span># 是否禁止调试，建议正式环境设置true,开发环境设置为false</span></span>
+<span class="line"><span>VITE_BAN_DEBUG = true</span></span></code></pre><div class="line-numbers-wrapper" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br></div></div><p>根据注释，配置文件中的内容。</p><h2 id="添加自定义配置" tabindex="-1">添加自定义配置 <a class="header-anchor" href="#添加自定义配置" aria-label="Permalink to &quot;添加自定义配置&quot;">​</a></h2><p>作为一种规范推荐使用 <code>VITE_</code> 作为自定义配置前缀，例如想要在<code>.env.production</code>文件添加自定义配置 <code>VITE_SETTING = set</code></p><div class="language- vp-adaptive-theme line-numbers-mode"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code"><code><span class="line"><span>...</span></span>
+<span class="line"><span>VITE_SETTING = set</span></span>
+<span class="line"><span>...</span></span></code></pre><div class="line-numbers-wrapper" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h2 id="使用配置文件中的内容" tabindex="-1">使用配置文件中的内容 <a class="header-anchor" href="#使用配置文件中的内容" aria-label="Permalink to &quot;使用配置文件中的内容&quot;">​</a></h2><p>例如想在项目中使用项目名称<code>VITE_SETTING</code>,在<code>ts</code>文件中可以这样使用</p><div class="language-ts vp-adaptive-theme line-numbers-mode"><button title="Copy Code" class="copy"></button><span class="lang">ts</span><pre class="shiki shiki-themes github-light github-dark vp-code"><code><span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">&lt;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">script setup lang</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">&#39;ts&#39;</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">&gt;</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">const</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;"> appSet</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;"> =</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;"> import</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">.</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">meta</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">.env.</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">VITE_SETTING</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">console.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;">log</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">(appSet)</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">&lt;/</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">script</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">&gt;</span></span></code></pre><div class="line-numbers-wrapper" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div>`,16),l=[i];function r(c,t,o,b,d,h){return n(),a("div",null,l)}const k=s(e,[["render",r]]);export{m as __pageData,k as default};

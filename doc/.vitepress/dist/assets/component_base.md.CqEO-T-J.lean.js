@@ -1,0 +1,1 @@
+import{_ as e,c as t,o,a4 as a}from"./chunks/framework.DE27HZwE.js";const f=JSON.parse('{"title":"前言","description":"","frontmatter":{},"headers":[],"relativePath":"component/base.md","filePath":"zh/component/base.md"}'),n={name:"component/base.md"},c=a("",7),r=[c];function s(p,_,d,l,m,i){return o(),t("div",null,r)}const u=e(n,[["render",s]]);export{f as __pageData,u as default};
